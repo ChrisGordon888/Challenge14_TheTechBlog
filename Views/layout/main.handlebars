@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+   
+    <!-- include any necessary CSS or JavaScript files here -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@4.7.7/dist/handlebars.min.js"></script>
+    <link rel="stylesheet" href="public/css/style.css">
+    
+    <title>{{title}}</title>
+</head>
+<body>
+    <header>
+        <a href="/" class="logo">The Tech Blog</a>
+        <nav class="navbar">
+            <a href="/">Home</a>
+            <a href="/dashboard">Dashboard</a>
+        </nav>
+        <div class="user-button">
+            <a href="/logout">Logout</a>
+        </div>
+    </header>
+    <main>
+        {{{body}}}
+    </main>
+    <footer>
+        <p>&copy; 2023 The Tech Blog</p>
+    </footer>
+</body>
+</html>
